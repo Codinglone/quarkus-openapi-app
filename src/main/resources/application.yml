@@ -1,0 +1,19 @@
+quarkus:
+  datasource:
+    db-kind: postgresql
+
+  hibernate-orm:
+    database:
+      scripts:
+        generation: drop-and-create
+
+  quinoa:
+    ui-dir: frontend
+    build-dir: ui
+    ui-root-path: /quinoa
+    dev-server:
+      enabled: true
+    package-manager: pnpm
+
+  swagger-ui:
+    path: /api-docs
