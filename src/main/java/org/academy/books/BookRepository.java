@@ -1,0 +1,9 @@
+package org.academy.books;
+
+import io.quarkus.hibernate.orm.panache.PanacheRepository;
+import jakarta.enterprise.context.ApplicationScoped;
+
+@ApplicationScoped
+public class BookRepository implements PanacheRepository<BookEntity> {
+  // add methods for fetching, saving, and deleting books
+}
