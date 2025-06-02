@@ -17,11 +17,6 @@ public class BookResource {
     this.bookService = bookService;
   }
 
-  /**
-   * Retrieves a list of all books.
-   *
-   * @return a list of BookDto objects representing all books.
-   */
   @GET
   public List<BookDto> getBooks() {
     return bookService.getAllBooks();
